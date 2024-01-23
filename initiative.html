@@ -1,0 +1,146 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD FOR ALL - Initiatives</title>
+    <style>
+        body {
+            background-image: url(./home_back.jpeg);
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            overflow: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(135, 206, 235, 0.8);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        nav {
+            text-align: center;
+            background-color: rgba(135, 206, 235, 0.8);
+            padding: 20px;
+            border-bottom: 2px solid #87CEEB;
+        }
+
+        nav button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 15px;
+            cursor: pointer;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav button:hover {
+            color: #E0FFFF;
+            transform: scale(1.1);
+        }
+
+        nav button a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 5px solid #87CEEB;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            color: black;
+            /* Set text color to black */
+            overflow-y: auto;
+            /* Enable vertical scrolling */
+            max-height: 80vh;
+            /* Increased maximum height for scrolling */
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #87CEEB;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                font-size: 2em;
+            }
+
+            nav button {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header><b>FOOD FOR ALL</b></header>
+    <nav>
+        <button onclick="navigateTo('#home')"><a href="#">Home</a></button>
+        <button onclick="navigateTo('#about')"><a href="about.html">About</a></button>
+        <button onclick="navigateTo('#volunteer')"><a href="initiative.html">Volunteer</a></button>
+        <button onclick="navigateTo('#contact')"><a href="contact.html">Contact</a></button>
+        <button onclick="navigateTo('#faq')"><a href="faq.html">FAQ</a></button>
+    </nav>
+    <div class="container" id="initiatives">
+        <h1>Our Initiatives</h1>
+        <p>We are actively involved in various initiatives aimed at reducing food waste and addressing hunger. Here are some of our key initiatives:</p>
+
+        <h2>1. Surplus Food Donation</h2>
+        <p>We collaborate with local businesses and organizations to collect surplus food and distribute it to those in need.</p>
+
+        <h2>2. Community Gardens</h2>
+        <p>Through community gardening projects, we promote sustainable agriculture and provide fresh produce to local communities.</p>
+
+        <h2>3. Education Programs</h2>
+        <p>We conduct educational programs to raise awareness about food waste, nutrition, and the importance of community involvement.</p>
+
+        <h2>4. Meal Planning Workshops</h2>
+        <p>We organize workshops to help individuals and families plan nutritious meals with the available resources, minimizing food wastage.</p>
+
+        <h2>5. Food Distribution Drives</h2>
+        <p>Regular drives to distribute packaged meals to underserved communities, ensuring access to wholesome food for everyone.</p>
+
+        <p>Feel free to add more initiatives and details here...</p>
+    </div>
+
+    <script>
+        function navigateTo(sectionId) {
+            document.querySelector(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+
+
+</body></html>

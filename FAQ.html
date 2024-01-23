@@ -1,0 +1,119 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD FOR ALL - FAQ</title>
+    <style>
+        body {
+            background-image: url(./home_back.jpeg);
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            overflow: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(135, 206, 235, 0.8);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        nav {
+            text-align: center;
+            background-color: rgba(135, 206, 235, 0.8);
+            padding: 20px;
+            border-bottom: 2px solid #87CEEB;
+        }
+
+        nav button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 15px;
+            cursor: pointer;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav button:hover {
+            color: #E0FFFF;
+            transform: scale(1.1);
+        }
+
+        nav button a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 5px solid #87CEEB;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            color: black;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .question {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #87CEEB;
+        }
+
+        .answer {
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <header><b>FOOD FOR ALL - FAQ</b></header>
+    
+    <nav>
+        <button onclick="navigateTo('home.html')"><a href="#">Home</a></button>
+        <button onclick="navigateTo('about.html')"><a href="about.html">About</a></button>
+        <button onclick="navigateTo('initiative.html')"><a href="initiative.html">Volunteer</a></button>
+        <button onclick="navigateTo('contact.html')"><a href="contact.html">Contact</a></button>
+        <button onclick="navigateTo('faq.html')"><a href="faq.html">FAQ</a></button>
+    </nav>
+
+    <div class="container">
+        <div class="faq-item">
+            <div class="question">Q: What is FOOD FOR ALL?</div>
+            <div class="answer">A: FOOD FOR ALL is a surplus food management platform dedicated to reducing food waste and addressing hunger by connecting surplus food providers with those in need.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">Q: How can I donate surplus food?</div>
+            <div class="answer">A: Donating surplus food is easy! You can register as a donor on our platform and follow the simple steps to contribute surplus food from your business or organization.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">Q: Can individuals get involved?</div>
+            <div class="answer">A: Absolutely! Individuals can contribute by volunteering, spreading awareness, or supporting us financially. Visit our "Get Involved" section for more details.</div>
+        </div>
+
+        <!-- Add more FAQ items as needed -->
+
+    </div>
+
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+
+
+</body></html>

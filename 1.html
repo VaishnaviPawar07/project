@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Web Page</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out; /* Add smooth transition effect */
+        }
+
+        .container:hover {
+            transform: scale(1.1); /* Apply scale transformation on hover */
+        }
+
+        .container h2 {
+            color: #007bff;
+        }
+
+        .container p {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Container 1</h2>
+        <p>This is the content of container 1.</p>
+    </div>
+
+    <div class="container">
+        <h2>Container 2</h2>
+        <p>This is the content of container 2.</p>
+    </div>
+
+    <div class="container">
+        <h2>Container 3</h2>
+        <p>This is the content of container 3.</p>
+    </div>
+</body>
+</html>
